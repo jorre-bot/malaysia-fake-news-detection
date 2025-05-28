@@ -10,6 +10,19 @@ st.set_page_config(
     layout="centered"
 )
 
+# Debug information
+st.sidebar.write("Debug Information:")
+st.sidebar.write(f"Current directory: {os.getcwd()}")
+st.sidebar.write(f"Files in directory: {os.listdir()}")
+
+try:
+    # Check if model file exists
+    model_path = 'best_fake_news_model.pkl'
+    if not os.path.exists(model_path):
+        st.error(f"Model file not found at {model_path}")
+except Exception as e:
+    st.error(f"Error checking model file: {str(e)}")
+
 # Add custom CSS
 st.markdown("""
 <style>
@@ -70,6 +83,7 @@ if col1.button("Analisis Berita", use_container_width=True):
                 
             except Exception as e:
                 st.error(f"Error analyzing news: {str(e)}")
+                st.error("Stack trace:", exc_info=True)
     else:
         st.warning("Sila masukkan teks berita untuk dianalisis.")
 

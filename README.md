@@ -1,5 +1,7 @@
 # Pengesan Berita Palsu Malaysia 🔍
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://malaysia-fake-news-detection.streamlit.app)
+
 A machine learning-powered fake news detection system for Malaysian news articles.
 
 ## Features
@@ -11,14 +13,14 @@ A machine learning-powered fake news detection system for Malaysian news article
 
 ## Live Demo
 
-You can try the application at: [Streamlit App Link] (Will be added after deployment)
+Try the application here: [Pengesan Berita Palsu Malaysia](https://malaysia-fake-news-detection.streamlit.app)
 
 ## Local Development
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/jorre-bot/malaysia-fake-news-detection.git
+cd malaysia-fake-news-detection
 ```
 
 2. Install dependencies:
@@ -46,4 +48,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Built with Streamlit
 - Powered by scikit-learn
-- Dataset sources: [Your dataset sources] 
+- Part of Final Year Project at [Your University] 

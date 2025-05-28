@@ -1,0 +1,8 @@
+credentials:
+  usernames: {}
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: fake_news_detection_cookie
+preauthorized:
+  emails: [] 
